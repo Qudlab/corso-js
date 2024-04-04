@@ -1,14 +1,5 @@
-/* Template: Corso - Free Training Course Landing Page Template
-   Author: Inovatik
-   Created: Nov 2019
-   Description: Custom JS file
-*/
-
-
 (function($) {
     "use strict"; 
-	
-	/* Preloader */
 	$(window).on('load', function() {
 		var preloaderFadeOutTime = 500;
 		function hidePreloader() {
@@ -20,9 +11,6 @@
 		hidePreloader();
 	});
 
-	
-	/* Navbar Scripts */
-	// jQuery to collapse the navbar on scroll
     $(window).on('scroll load', function() {
 		if ($(".navbar").offset().top > 60) {
 			$(".fixed-top").addClass("top-nav-collapse");
@@ -31,7 +19,6 @@
 		}
     });
 
-	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 		$(document).on('click', 'a.page-scroll', function(event) {
 			var $anchor = $(this);
